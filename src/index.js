@@ -40,4 +40,4 @@ app.listen(process.env.PORT, () => {
     );
 });
 
-export { prisma };
+export { prisma, app };

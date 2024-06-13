@@ -5,12 +5,14 @@
     "description": "This is a clinic project",
     "main": "index.js",
     "scripts": {
-        "start": "nodemon src/index.js",
+        "start": "node src/index.js",
+        "dev": "nodemon src/index.js",
         "test": "echo \"Error: no test specified\" && exit 1",
         "lint": "eslint src --fix",
         "prettier": "prettier --write src/**/*.js",
         "generate": "prisma generate",
-        "migrate": "npm run generate && prisma migrate dev"
+        "migrate": "npm run generate && prisma migrate dev",
+        "vercel-build": "echo hello"
     },
     "author": "Mostafa Samy",
     "license": "ISC",
